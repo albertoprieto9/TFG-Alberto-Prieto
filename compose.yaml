@@ -1,0 +1,6 @@
+services:
+  lector:
+    build: .
+    volumes:
+      - .:/app:ro
+      - ./salidas:/app/salidas

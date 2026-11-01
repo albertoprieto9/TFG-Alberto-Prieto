@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.DS_Store
+salidas/
+
+# Notas personales y material de preparacion de la memoria
+/docs/DIARIO_TECNICO.md
+/CONTEXTO_TFG.md
+/FUENTES_Y_REFERENCIAS_IEEE.md
+
+# README local pendiente de revision
+/README.md

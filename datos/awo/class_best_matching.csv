@@ -1,0 +1,6 @@
+Gold_term,Pre_term,Method,Score
+Omnivore,Omnivore,hard_match,1.0
+animal,Animal,hard_match,1.0
+carnivore,Carnivore,hard_match,1.0
+herbivore,Herbivore,hard_match,1.0
+plant,Plant,hard_match,1.0

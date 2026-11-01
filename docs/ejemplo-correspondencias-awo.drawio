@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Paso 10 - Dos pares de propiedades">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gold-clase-1" value="gold:Omnivore" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="100" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pred-clase-1" value="pred:Omnivore" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="820" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-clase-1" value="correspondencia según CSV" edge="1" parent="1" source="gold-clase-1" target="pred-clase-1" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gold-clase-2" value="gold:animal" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="100" y="210" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pred-clase-2" value="pred:Animal" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="820" y="210" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-clase-2" value="correspondencia según CSV" edge="1" parent="1" source="gold-clase-2" target="pred-clase-2" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gold-clase-3" value="gold:carnivore" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="100" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pred-clase-3" value="pred:Carnivore" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="820" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-clase-3" value="correspondencia según CSV" edge="1" parent="1" source="gold-clase-3" target="pred-clase-3" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gold-clase-4" value="gold:herbivore" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="100" y="430" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pred-clase-4" value="pred:Herbivore" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="820" y="430" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-clase-4" value="correspondencia según CSV" edge="1" parent="1" source="gold-clase-4" target="pred-clase-4" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gold-clase-5" value="gold:plant" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="100" y="540" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pred-clase-5" value="pred:Plant" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="820" y="540" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-clase-5" value="correspondencia según CSV" edge="1" parent="1" source="gold-clase-5" target="pred-clase-5" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="propiedad-pred-1" value="&lt;&lt;owl:ObjectProperty&gt;&gt;&#10;pred:isEatenBy" vertex="1" parent="1" style="rhombus;whiteSpace=wrap;html=0;">
+          <mxGeometry x="460" y="900" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="propiedad-gold-1" value="&lt;&lt;owl:ObjectProperty&gt;&gt;&#10;gold:eaten-by" vertex="1" parent="1" style="rhombus;whiteSpace=wrap;html=0;">
+          <mxGeometry x="60" y="900" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dominio-1" value="&lt;&lt;rdfs:domain&gt;&gt;" edge="1" parent="1" source="propiedad-pred-1" target="pred-clase-2" style="endArrow=open;endFill=0;dashed=1;html=0;exitX=1;exitY=0.25;entryX=0;entryY=0.25;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rango-1" value="&lt;&lt;rdfs:range&gt;&gt;" edge="1" parent="1" source="propiedad-pred-1" target="pred-clase-2" style="endArrow=open;endFill=0;dashed=1;html=0;exitX=1;exitY=0.75;entryX=0;entryY=0.75;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-propiedad-1" value="correspondencia según CSV" edge="1" parent="1" source="propiedad-gold-1" target="propiedad-pred-1" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="informe-1" value="Estados según triple_layer3_pairs.csv&#10;eaten-by ↔ is eaten by&#10;Dominio: fp&#10;Rango: fp" vertex="1" parent="1" style="shape=note;whiteSpace=wrap;html=0;">
+          <mxGeometry x="60" y="1450" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pred-clase-6" value="pred:PlantPart" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=0;">
+          <mxGeometry x="820" y="650" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="propiedad-pred-2" value="&lt;&lt;owl:ObjectProperty&gt;&gt;&#10;pred:isPartOfPlant" vertex="1" parent="1" style="rhombus;whiteSpace=wrap;html=0;">
+          <mxGeometry x="460" y="1120" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="propiedad-gold-2" value="&lt;&lt;owl:ObjectProperty&gt;&gt;&#10;gold:is-part-of" vertex="1" parent="1" style="rhombus;whiteSpace=wrap;html=0;">
+          <mxGeometry x="60" y="1120" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dominio-2" value="&lt;&lt;rdfs:domain&gt;&gt;" edge="1" parent="1" source="propiedad-pred-2" target="pred-clase-6" style="endArrow=open;endFill=0;dashed=1;html=0;exitX=1;exitY=0.25;entryX=0;entryY=0.25;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rango-2" value="&lt;&lt;rdfs:range&gt;&gt;" edge="1" parent="1" source="propiedad-pred-2" target="pred-clase-5" style="endArrow=open;endFill=0;dashed=1;html=0;exitX=1;exitY=0.75;entryX=0;entryY=0.75;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="correspondencia-propiedad-2" value="correspondencia según CSV" edge="1" parent="1" source="propiedad-gold-2" target="propiedad-pred-2" style="dashed=1;startArrow=none;endArrow=none;html=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="informe-2" value="Estados según triple_layer3_pairs.csv&#10;is-part-of ↔ is part of plant&#10;Dominio: fp&#10;Rango: fp" vertex="1" parent="1" style="shape=note;whiteSpace=wrap;html=0;">
+          <mxGeometry x="500" y="1450" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="fuentes-1" value="Fuentes de correspondencias&#10;Clases: class_best_matching.csv&#10;Propiedades: property_best_matching.csv" vertex="1" parent="1" style="shape=note;whiteSpace=wrap;html=0;">
+          <mxGeometry x="60" y="1620" width="340" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

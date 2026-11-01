@@ -1,0 +1,9 @@
+.git
+.venv
+__pycache__
+*.pyc
+.env
+salidas
+docs/DIARIO_TECNICO.md
+CONTEXTO_TFG.md
+FUENTES_Y_REFERENCIAS_IEEE.md

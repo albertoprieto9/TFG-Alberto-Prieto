@@ -1,0 +1,3 @@
+PropertyType,GoldPredicate,PredPredicate,GoldPredicateNorm,PredPredicateNorm,GoldType,PredType,TypeVerdict,GoldDomain,PredDomain,GoldDomainNorm,PredDomainNorm,DomainStatus,GoldRange,PredRange,GoldRangeNorm,PredRangeNorm,RangeStatus,FullMatch,Note
+ObjectProperty,eaten-by,is eaten by,eatenby,iseatenby,ObjectProperty,ObjectProperty,tp,,Animal,,animal,fp,,Animal,,animal,fp,NO,
+ObjectProperty,is-part-of,is part of plant,ispartof,ispartofplant,ObjectProperty,ObjectProperty,tp,,PlantPart,,plantpart,fp,,Plant,,plant,fp,NO,
