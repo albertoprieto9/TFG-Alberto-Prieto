@@ -1,0 +1,14 @@
+[project]
+name = "tfg-comparacion-ontologias"
+version = "0.1.0"
+description = "Diagramas editables de comparación de ontologías OWL y correspondencias CSV."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "rdflib==7.0.0",
+    "isodate==0.6.1",
+    "pyparsing==3.1.2",
+    "six==1.16.0",
+]
+
+[tool.poetry]
+package-mode = false
